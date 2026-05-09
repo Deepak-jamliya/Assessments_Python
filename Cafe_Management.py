@@ -108,6 +108,8 @@ while True:
             print("Thank you For Ordering ")
             print("Visit Again!!")
             break  
+        case _:
+            print("Invalid Choice")
 
 
 
