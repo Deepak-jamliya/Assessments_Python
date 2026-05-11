@@ -17,9 +17,16 @@ Output:
 Total Electricity Bill: ₹1950
 ---------------------------------------------------------------------------------------------------------------------------'''
 
-units = int(input("Enter units consumed : "))
+units = int(input("Enter Units Consumed = "))
 
 if units <= 100:
-    units = units * 5
-    print("Total Electricity Bill : ",units)
-elif units > 100 and units 
+    bill = units * 5
+elif units <= 200:
+    bill = (100 * 5) + ((units - 100) * 7)
+else:
+    bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)
+
+print("Bill = ",bill)
+
+
+
