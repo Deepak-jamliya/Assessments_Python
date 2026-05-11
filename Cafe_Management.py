@@ -9,7 +9,6 @@ maggie = 0
 hot_chocolate = 0
 burger = 0
 chocolate_shake = 0
-hello = 0
 while True:
     print("\n\n--------------- SMART CAFE ---------------")
     print("\n             1 - View Menu")
