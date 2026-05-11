@@ -29,6 +29,3 @@ for i in range(2,n):
     first = second
     second = sum
     print(sum,end = " ")
-
-
-
