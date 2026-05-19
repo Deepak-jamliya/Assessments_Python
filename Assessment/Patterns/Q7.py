@@ -9,7 +9,17 @@
 
 n = int(input("Enter n = "))
 
-for i in range(1,n+1):
+for i in range(0,n+1):
     print()
-    i = 1
-    while i
+    if i == 0:
+        for j in range(n):
+            print("-",end = "")
+    else:
+        num = i * 2
+        for j in range(1,n+1):
+            if j<= i:
+                print(num,end = "")
+                num-=1
+            else:
+                print("-",end = "")
+            

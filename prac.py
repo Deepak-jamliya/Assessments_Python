@@ -1,11 +1,20 @@
-units = int(input("Enter Units Consumed = "))
+'''
+    *
+   **
+'''
 
-if units <= 100:
-    bill = units * 5
-elif units <= 200:
-    bill = (100 * 5) + ((units - 100) * 7)
-else:
-    bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)
+n = int(input("Enter n = "))
 
-print("Bill = ",bill)
+for i in range(1,n+1):
+    print()
+    j = 1
+    while j <= i:
+        print("*",end = "")
+        j+=1
 
+for i in range(1,n):
+    print()
+    k = n - i
+    while k >= 1:
+        print("*",end = "")
+        k-=1
