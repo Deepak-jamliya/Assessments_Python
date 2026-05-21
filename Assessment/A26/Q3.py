@@ -15,11 +15,14 @@ abcda
 
 str = input("Enter String = ")
 
+new = ""
 prev = ""
-for ch in str:
-    prev = ""
-    if ch in prev:
-        continue
-    else:
-        prev = ch
-print(prev)
+i = 0
+while i < len(str):
+    if str[i] != prev:
+        prev = str[i]
+        new = new + str[i]
+    i+=1
+
+
+print(new)
