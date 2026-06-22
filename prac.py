@@ -1,10 +1,10 @@
-logins = ["Deepak","Gourav","Deepak","Abhijeet","Kuldeep"]
-d = {}
+def myFun(*args, **kwargs):
+    print("Non-Keyword Arguments (*args):")
+    for arg in args:
+        print(arg)
 
-for i in logins:
-    l = len(i)
-    if l not in d:
-        d[l] = []
-    d[l].append(i)
+    print("Keyword Arguments (**kwargs):")
+    for key, value in kwargs.items():
+        print(f"{key} == {value}")
 
-print(d)
+myFun('Hey', 'Welcome', first='Geeks', last='Geeks',mid='for')
