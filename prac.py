@@ -1,10 +1,8 @@
-def myFun(*args, **kwargs):
-    print("Non-Keyword Arguments (*args):")
-    for arg in args:
-        print(arg)
+nums = [0,1,12,3,0,4]
+zeroes = []
 
-    print("Keyword Arguments (**kwargs):")
-    for key, value in kwargs.items():
-        print(f"{key} == {value}")
-
-myFun('Hey', 'Welcome', first='Geeks', last='Geeks',mid='for')
+for i in nums:
+    if i == 0:
+        nums.remove(i)
+        zeroes.append(i)
+print(nums+zeroes)
