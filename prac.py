@@ -1,8 +1,3 @@
-nums = [0,1,12,3,0,4]
-zeroes = []
+from rich import print
 
-for i in nums:
-    if i == 0:
-        nums.remove(i)
-        zeroes.append(i)
-print(nums+zeroes)
+print("[italic green]Welcome to the Bank Account Management System![/italic green]")
